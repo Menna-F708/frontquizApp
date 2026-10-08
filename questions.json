@@ -1,0 +1,1582 @@
+[
+  {
+    "id": "html",
+    "name": "HTML",
+    "color": "#f2788f",
+    "icon": "</>",
+    "questions": [
+      {
+        "question": "Which tag wraps the main navigation links?",
+        "options": [
+          "<nav>",
+          "<menu>",
+          "<links>",
+          "<header>"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which attribute describes an image for screen readers?",
+        "options": [
+          "title",
+          "alt",
+          "src",
+          "name"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What does <!DOCTYPE html> do?",
+        "options": [
+          "Imports CSS",
+          "Triggers standards (HTML5) mode",
+          "Creates the head",
+          "Adds a comment"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which element holds the page's visible content?",
+        "options": [
+          "<meta>",
+          "<head>",
+          "<body>",
+          "<title>"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which tag creates a hyperlink?",
+        "options": [
+          "<link>",
+          "<href>",
+          "<url>",
+          "<a>"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which attribute sets a link's destination?",
+        "options": [
+          "src",
+          "href",
+          "target",
+          "url"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which element is semantic for independent content like a blog post?",
+        "options": [
+          "<b>",
+          "<span>",
+          "<article>",
+          "<div>"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which tag creates the largest heading?",
+        "options": [
+          "<head>",
+          "<h1>",
+          "<h6>",
+          "<title>"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which attribute opens a link in a new tab?",
+        "options": [
+          "open=\"tab\"",
+          "href=\"_new\"",
+          "target=\"_blank\"",
+          "rel=\"new\""
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which input type shows a date picker?",
+        "options": [
+          "calendar",
+          "day",
+          "datetime-text",
+          "date"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which tag embeds an image?",
+        "options": [
+          "<picture-src>",
+          "<img>",
+          "<figure>",
+          "<image>"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What is the purpose of the <label> element?",
+        "options": [
+          "Creates a heading",
+          "Adds a tooltip",
+          "Describes a form control",
+          "Links a stylesheet"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which attribute makes a form field mandatory?",
+        "options": [
+          "mandatory",
+          "must",
+          "validate",
+          "required"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which meta tag name makes a page responsive on mobile?",
+        "options": [
+          "scale",
+          "viewport",
+          "responsive",
+          "device"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which element represents the footer of a page or section?",
+        "options": [
+          "<foot>",
+          "<bottom>",
+          "<end>",
+          "<footer>"
+        ],
+        "answer": 3
+      }
+    ]
+  },
+  {
+    "id": "css",
+    "name": "CSS",
+    "color": "#38bdf8",
+    "icon": "{ }",
+    "questions": [
+      {
+        "question": "Which property changes text color?",
+        "options": [
+          "font-color",
+          "text-style",
+          "color",
+          "fill"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which unit is relative to the root font size?",
+        "options": [
+          "em",
+          "rem",
+          "px",
+          "%"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Default value of position?",
+        "options": [
+          "relative",
+          "absolute",
+          "static",
+          "fixed"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which property sets the space inside an element's border?",
+        "options": [
+          "spacing",
+          "gap",
+          "padding",
+          "margin"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which selector targets the element with id \"main\"?",
+        "options": [
+          ".main",
+          "main#",
+          "#main",
+          "*main"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which selector targets elements with class \"card\"?",
+        "options": [
+          "#card",
+          "card.",
+          "*card",
+          ".card"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which pseudo-class styles an element on mouse over?",
+        "options": [
+          ":hover",
+          ":focus",
+          ":active",
+          ":over"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which property controls stacking order?",
+        "options": [
+          "z-index",
+          "layer",
+          "stack",
+          "order-z"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What does box-sizing: border-box do?",
+        "options": [
+          "Makes the box round",
+          "Includes padding and border in the width",
+          "Removes the border",
+          "Adds margin to the width"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which declaration hides an element but keeps its space?",
+        "options": [
+          "position: fixed",
+          "visibility: hidden",
+          "opacity: 1",
+          "display: none"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which property rounds corners?",
+        "options": [
+          "border-curve",
+          "corner-round",
+          "round",
+          "border-radius"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which at-rule applies styles based on screen size?",
+        "options": [
+          "@media",
+          "@responsive",
+          "@screen-size",
+          "@query"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which function reads a custom property?",
+        "options": [
+          "get()",
+          "var()",
+          "use()",
+          "prop()"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which property creates a smooth change between states?",
+        "options": [
+          "ease",
+          "animation-state",
+          "transform-time",
+          "transition"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which unit is relative to the viewport width?",
+        "options": [
+          "em",
+          "vw",
+          "ch",
+          "rem"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "flex",
+    "name": "Flexbox",
+    "color": "#5b7cfa",
+    "icon": "⇆",
+    "questions": [
+      {
+        "question": "Which property aligns items on the main axis?",
+        "options": [
+          "align-items",
+          "justify-content",
+          "align-content",
+          "place-items"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Default flex-direction?",
+        "options": [
+          "column",
+          "row",
+          "row-reverse",
+          "wrap"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which lets items wrap to new lines?",
+        "options": [
+          "flex-wrap: wrap",
+          "flex-flow: none",
+          "wrap: true",
+          "display: wrap"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which declaration turns an element into a flex container?",
+        "options": [
+          "position: flex",
+          "display: flex",
+          "flex: container",
+          "float: flex"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which property aligns items on the cross axis?",
+        "options": [
+          "order",
+          "justify-content",
+          "flex-flow",
+          "align-items"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does flex-direction: column do?",
+        "options": [
+          "Stacks items vertically",
+          "Wraps items",
+          "Centers items",
+          "Reverses the cross axis"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which property lets an item grow to fill free space?",
+        "options": [
+          "flex-grow",
+          "flex-fill",
+          "grow-item",
+          "flex-size"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "How do you center flex items on both axes?",
+        "options": [
+          "margin: auto on the parent",
+          "text-align: center",
+          "flex-center: both",
+          "justify-content: center; align-items: center"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which property changes the visual order of a flex item?",
+        "options": [
+          "sort",
+          "order",
+          "z-index",
+          "flex-order"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which justify-content value puts the first item at the start and the last at the end?",
+        "options": [
+          "stretch",
+          "flex-start",
+          "center",
+          "space-between"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What is the default value of flex-wrap?",
+        "options": [
+          "nowrap",
+          "wrap-reverse",
+          "wrap",
+          "auto"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which property sets the space between flex items?",
+        "options": [
+          "flex-gap",
+          "space",
+          "gap",
+          "margin-flex"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What does flex: 1 commonly mean?",
+        "options": [
+          "The item is 1px wide",
+          "The item has order 1",
+          "The item grows to share free space",
+          "The item is hidden"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which property overrides alignment for a single flex item?",
+        "options": [
+          "align-items",
+          "self-align",
+          "align-self",
+          "align-single"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "With flex-direction: row, the main axis runs?",
+        "options": [
+          "Vertically",
+          "Depends on height",
+          "Horizontally",
+          "Diagonally"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "grid",
+    "name": "Grid",
+    "color": "#8b5cf6",
+    "icon": "▦",
+    "questions": [
+      {
+        "question": "Three equal columns?",
+        "options": [
+          "grid-template-columns: repeat(3, 1fr)",
+          "grid-columns: 3",
+          "columns: 3 equal",
+          "display: columns(3)"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What does fr mean?",
+        "options": [
+          "Frame ratio",
+          "Fraction of free space",
+          "Fixed row",
+          "Fill rule"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which adds space between cells?",
+        "options": [
+          "gap",
+          "margin-grid",
+          "spacing",
+          "space-between"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which declaration creates a grid container?",
+        "options": [
+          "display: grid",
+          "position: grid",
+          "grid: on",
+          "layout: grid"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which property defines the rows of a grid?",
+        "options": [
+          "row-template",
+          "grid-rows",
+          "grid-row-count",
+          "grid-template-rows"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which makes a grid item span two columns?",
+        "options": [
+          "grid-column: span 2",
+          "column-span: 2",
+          "span: col 2",
+          "grid-width: 2"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What does repeat(4, 1fr) create?",
+        "options": [
+          "Four equal tracks",
+          "A four-second animation",
+          "Four nested grids",
+          "Four 1px tracks"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which creates responsive columns without media queries?",
+        "options": [
+          "repeat(auto-fit, minmax(200px, 1fr))",
+          "flex(auto)",
+          "calc(auto)",
+          "grid(auto-columns)"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which property names areas of a grid layout?",
+        "options": [
+          "grid-zones",
+          "area-template",
+          "grid-template-areas",
+          "grid-names"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which property aligns items inside their cells along the inline axis?",
+        "options": [
+          "flow-items",
+          "place-gap",
+          "justify-items",
+          "align-content"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What does minmax(200px, 1fr) mean?",
+        "options": [
+          "At most 200px",
+          "Between 1px and 200px",
+          "At least 200px and at most 1fr",
+          "Exactly 200px"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which property sets both row and column gaps?",
+        "options": [
+          "gap",
+          "margin-grid",
+          "gutter",
+          "grid-space"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Grid is best described as?",
+        "options": [
+          "A table replacement only",
+          "A one-dimensional layout system",
+          "An animation tool",
+          "A two-dimensional layout system"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does grid-auto-flow: dense do?",
+        "options": [
+          "Packs items to fill holes in the grid",
+          "Sorts items alphabetically",
+          "Doubles the gap",
+          "Hides empty cells"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which unit is designed for grid track sizing?",
+        "options": [
+          "vw",
+          "fr",
+          "rem",
+          "px"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "js",
+    "name": "JavaScript",
+    "color": "#f5b94a",
+    "icon": "JS",
+    "questions": [
+      {
+        "question": "typeof null returns?",
+        "options": [
+          "'null'",
+          "'undefined'",
+          "'object'",
+          "'number'"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which adds an item to the end of an array?",
+        "options": [
+          "push",
+          "pop",
+          "shift",
+          "unshift"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What does === compare?",
+        "options": [
+          "Value only",
+          "Value and type",
+          "Type only",
+          "Reference only"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which keyword declares a block-scoped variable that can be reassigned?",
+        "options": [
+          "let",
+          "var",
+          "const",
+          "def"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which keyword declares a constant binding?",
+        "options": [
+          "const",
+          "final",
+          "let",
+          "static"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What does Array.map() return?",
+        "options": [
+          "undefined",
+          "A single value",
+          "The original array",
+          "A new array"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which method removes the last item of an array?",
+        "options": [
+          "push",
+          "shift",
+          "slice",
+          "pop"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does typeof [] return?",
+        "options": [
+          "'list'",
+          "'object'",
+          "'undefined'",
+          "'array'"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which statement handles runtime errors?",
+        "options": [
+          "on error",
+          "catch only",
+          "if...error",
+          "try...catch"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does JSON.stringify do?",
+        "options": [
+          "Parses a JSON string",
+          "Fetches JSON",
+          "Validates JSON",
+          "Converts a value to a JSON string"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which function runs code after a delay?",
+        "options": [
+          "wait",
+          "sleep",
+          "delay",
+          "setTimeout"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What is a closure?",
+        "options": [
+          "A private class",
+          "A function that closes the browser",
+          "A loop that ends",
+          "A function that remembers its outer scope"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which keyword pauses an async function until a promise settles?",
+        "options": [
+          "await",
+          "hold",
+          "stop",
+          "pause"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which array method keeps only items that pass a test?",
+        "options": [
+          "filter",
+          "map",
+          "sort",
+          "reduce"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What does NaN === NaN return?",
+        "options": [
+          "true",
+          "NaN",
+          "false",
+          "undefined"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "ts",
+    "name": "TypeScript",
+    "color": "#3b82f6",
+    "icon": "TS",
+    "questions": [
+      {
+        "question": "Which keyword describes an object's shape?",
+        "options": [
+          "interface",
+          "shape",
+          "struct",
+          "model"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What must you do before using an 'unknown' value?",
+        "options": [
+          "Nothing",
+          "Narrow its type",
+          "Cast to any",
+          "Import it"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Extension for TypeScript with JSX?",
+        "options": [
+          ".tsr",
+          ".ts",
+          ".tsx",
+          ".jsx"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which syntax annotates a variable's type?",
+        "options": [
+          "let x: number",
+          "let number x",
+          "let x<number>",
+          "number let x"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which type means a value can be a string or a number?",
+        "options": [
+          "string, number",
+          "string | number",
+          "string & number",
+          "string + number"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What does the ? in \"name?: string\" mean?",
+        "options": [
+          "The property is a union",
+          "The value is null",
+          "The property is optional",
+          "The property is private"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which type is safer than any for input of unknown shape?",
+        "options": [
+          "void",
+          "unknown",
+          "object",
+          "never"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which type represents a function that never returns?",
+        "options": [
+          "null",
+          "void",
+          "undefined",
+          "never"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which keyword creates a type alias?",
+        "options": [
+          "define",
+          "type",
+          "typedef",
+          "alias"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What do generics like Array<T> provide?",
+        "options": [
+          "Faster runtime",
+          "Reusable code with flexible types",
+          "Automatic imports",
+          "Private members"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which utility type makes all properties optional?",
+        "options": [
+          "Partial<T>",
+          "Optional<T>",
+          "Loose<T>",
+          "Maybe<T>"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What does \"value as string\" do in TypeScript?",
+        "options": [
+          "Throws if it is not a string",
+          "Tells the compiler to treat it as a string",
+          "Declares a string variable",
+          "Converts it to a string at runtime"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which command type-checks without emitting files?",
+        "options": [
+          "tsc --check",
+          "tsc --noEmit",
+          "tsc --dry",
+          "tsc --types"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which file configures the TypeScript compiler?",
+        "options": [
+          "ts.config",
+          "compiler.json",
+          "tsconfig.json",
+          "package.json"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What does readonly do on a property?",
+        "options": [
+          "Makes it optional",
+          "Makes it static",
+          "Prevents reassignment after initialization",
+          "Hides it"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "color": "#2bb5c9",
+    "icon": "⚛",
+    "questions": [
+      {
+        "question": "Which hook holds local state?",
+        "options": [
+          "useState",
+          "useRef",
+          "useMemo",
+          "useFetch"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What is JSX?",
+        "options": [
+          "A database",
+          "Syntax that looks like HTML inside JS",
+          "A CSS tool",
+          "A bundler"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What are props?",
+        "options": [
+          "Inputs passed to a component",
+          "Internal state",
+          "CSS rules",
+          "Routes"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which hook runs side effects after render?",
+        "options": [
+          "useState",
+          "useEffect",
+          "useCallback",
+          "useMemo"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What must a component name start with?",
+        "options": [
+          "A lowercase letter",
+          "An underscore",
+          "A number",
+          "A capital letter"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What is the key prop for in lists?",
+        "options": [
+          "Adds an id attribute",
+          "Encrypts data",
+          "Helps React identify items",
+          "Sets CSS"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "How does a parent pass data to a child?",
+        "options": [
+          "Props",
+          "Cookies",
+          "Routes",
+          "CSS variables"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which hook gives a reference to a DOM element?",
+        "options": [
+          "useState",
+          "useMemo",
+          "useRef",
+          "useEffect"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What does useMemo do?",
+        "options": [
+          "Creates state",
+          "Fetches data",
+          "Handles routing",
+          "Caches a computed value"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What happens when state is updated?",
+        "options": [
+          "Props reset",
+          "The component re-renders",
+          "Nothing visible",
+          "The page reloads"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which is the correct way to handle a click in JSX?",
+        "options": [
+          "onclick=\"handle()\"",
+          "onClick={handle}",
+          "click={handle}",
+          "on-click=handle"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Why use a fragment <>...</>?",
+        "options": [
+          "To return multiple elements without an extra DOM node",
+          "To speed up CSS",
+          "To create portals",
+          "To hide elements"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What is the virtual DOM?",
+        "options": [
+          "A browser feature",
+          "A database",
+          "A CSS engine",
+          "A lightweight in-memory copy of the UI"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which hook shares data without prop drilling?",
+        "options": [
+          "useCallback",
+          "useContext",
+          "useId",
+          "useRef"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What is a controlled input?",
+        "options": [
+          "It ignores events",
+          "It is read-only",
+          "Its value is driven by React state",
+          "It is hidden"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "dom",
+    "name": "DOM & Events",
+    "color": "#e5484d",
+    "icon": "◎",
+    "questions": [
+      {
+        "question": "Selects the first element matching a CSS selector?",
+        "options": [
+          "getElementById",
+          "querySelector",
+          "getElementsByTag",
+          "findOne"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "How do you listen for clicks?",
+        "options": [
+          "addEventListener",
+          "onListen",
+          "attachClick",
+          "watch"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "event.preventDefault() does what?",
+        "options": [
+          "Stops bubbling",
+          "Cancels the default browser action",
+          "Removes the listener",
+          "Reloads the page"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which property sets text safely without parsing HTML?",
+        "options": [
+          "nodeType",
+          "innerHTML",
+          "textContent",
+          "outerHTML"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which method creates a new element?",
+        "options": [
+          "document.make",
+          "document.createElement",
+          "document.newElement",
+          "document.add"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which method adds a child to a parent element?",
+        "options": [
+          "push",
+          "insert",
+          "appendChild",
+          "addChild"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What is event bubbling?",
+        "options": [
+          "Events are cancelled",
+          "Events travel down only",
+          "Events repeat",
+          "Events travel from the target up through its ancestors"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does event delegation rely on?",
+        "options": [
+          "Bubbling",
+          "Cloning",
+          "Cookies",
+          "Timers"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which property gives the element that triggered the event?",
+        "options": [
+          "event.source",
+          "event.item",
+          "event.target",
+          "event.node"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which method toggles a class on an element?",
+        "options": [
+          "class.switch",
+          "className.flip",
+          "style.toggle",
+          "classList.toggle"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which event fires when the HTML is fully parsed?",
+        "options": [
+          "parsed",
+          "DOMContentLoaded",
+          "load-dom",
+          "ready"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which method removes an event listener?",
+        "options": [
+          "detach",
+          "clearEvent",
+          "removeEventListener",
+          "off"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which method stops an event from bubbling?",
+        "options": [
+          "cancelUp",
+          "stopPropagation",
+          "preventBubble",
+          "stopBubble"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What does querySelectorAll return?",
+        "options": [
+          "A NodeList of matches",
+          "A Promise",
+          "A single element",
+          "An array of strings"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which method reads any HTML attribute?",
+        "options": [
+          "attr",
+          "fetchAttribute",
+          "getAttribute",
+          "readAttr"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "a11y",
+    "name": "Accessibility",
+    "color": "#12a150",
+    "icon": "♿",
+    "questions": [
+      {
+        "question": "Which attribute gives an element an accessible name?",
+        "options": [
+          "aria-label",
+          "data-name",
+          "role-title",
+          "alt-text"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Minimum contrast for normal text (WCAG AA)?",
+        "options": [
+          "2:1",
+          "3:1",
+          "4.5:1",
+          "10:1"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Best element for a clickable action?",
+        "options": [
+          "<div onclick>",
+          "<span>",
+          "<button>",
+          "<p>"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What does a11y stand for?",
+        "options": [
+          "Accessibility",
+          "Accessible apps",
+          "Active layouts",
+          "Async API"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which element is best for a navigation landmark?",
+        "options": [
+          "<b>",
+          "<nav>",
+          "<span>",
+          "<div>"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What should alt text be for a purely decorative image?",
+        "options": [
+          "\"image\"",
+          "A long description",
+          "The file name",
+          "Empty (alt=\"\")"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which keys activate a native button?",
+        "options": [
+          "Escape only",
+          "Tab only",
+          "Shift",
+          "Enter and Space"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does :focus-visible help with?",
+        "options": [
+          "Speeding up rendering",
+          "Showing focus for keyboard users",
+          "Dark mode",
+          "Hiding scrollbars"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which attribute announces updates without moving focus?",
+        "options": [
+          "aria-new",
+          "aria-focus",
+          "aria-hidden",
+          "aria-live"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does aria-hidden=\"true\" do?",
+        "options": [
+          "Hides it visually",
+          "Disables clicks",
+          "Deletes it",
+          "Hides the element from assistive tech"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which heading practice is best?",
+        "options": [
+          "Use only h1",
+          "Use headings for font size",
+          "Use headings in logical order",
+          "Skip levels for styling"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which is true about color?",
+        "options": [
+          "Use only color for states",
+          "Red always means error",
+          "Avoid color completely",
+          "Do not rely on color alone to convey meaning"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does tabindex=\"0\" do?",
+        "options": [
+          "Focuses it first",
+          "Removes it from the tab order",
+          "Hides it",
+          "Makes an element keyboard focusable in natural order"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Which element labels a form input?",
+        "options": [
+          "<p>",
+          "<label for=\"id\">",
+          "<title>",
+          "<small>"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What is a screen reader?",
+        "options": [
+          "Software that reads page content aloud",
+          "A browser theme",
+          "A screenshot tool",
+          "A monitor type"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "api",
+    "name": "Fetch & APIs",
+    "color": "#d4579a",
+    "icon": "⇄",
+    "questions": [
+      {
+        "question": "fetch() returns a?",
+        "options": [
+          "Promise",
+          "Array",
+          "Callback",
+          "JSON string"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "HTTP status for Not Found?",
+        "options": [
+          "200",
+          "301",
+          "404",
+          "500"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Parses a JSON response body?",
+        "options": [
+          "res.json()",
+          "res.parse()",
+          "JSON.res()",
+          "res.text.json"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "What does API stand for?",
+        "options": [
+          "Application Programming Interface",
+          "Application Process Input",
+          "Automated Page Index",
+          "Applied Program Integration"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which HTTP method retrieves data?",
+        "options": [
+          "PUT",
+          "GET",
+          "DELETE",
+          "POST"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which HTTP method usually creates a resource?",
+        "options": [
+          "HEAD",
+          "GET",
+          "POST",
+          "TRACE"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which status code means success?",
+        "options": [
+          "500",
+          "200",
+          "404",
+          "301"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Which status code means server error?",
+        "options": [
+          "404",
+          "500",
+          "301",
+          "200"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What does res.ok tell you?",
+        "options": [
+          "The status is in the 200-299 range",
+          "The server is online",
+          "The request is cached",
+          "The response is JSON"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which header describes the body format?",
+        "options": [
+          "Format",
+          "Accept-Body",
+          "Type-Of",
+          "Content-Type"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "What does CORS control?",
+        "options": [
+          "Only cookies",
+          "Cross-origin requests from browsers",
+          "Image compression",
+          "CSS ordering"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What does JSON stand for?",
+        "options": [
+          "Java Standard Object Notation",
+          "JavaScript Online Network",
+          "JavaScript Object Notation",
+          "Joined Syntax Object Notation"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which statement catches network failures with async/await?",
+        "options": [
+          "switch",
+          "try...catch",
+          "if...else",
+          "finally only"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "How do you send JSON in a fetch POST body?",
+        "options": [
+          "json: data",
+          "data: JSON.parse(data)",
+          "body: JSON.stringify(data)",
+          "body: data"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Which status code means Unauthorized?",
+        "options": [
+          "401",
+          "404",
+          "200",
+          "500"
+        ],
+        "answer": 0
+      }
+    ]
+  }
+]
