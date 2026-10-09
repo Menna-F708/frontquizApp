@@ -1,81 +1,345 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>FrontQuiz</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<div class="app">
-<div class="overlay" id="overlay"></div>
-<aside>
- <div class="logo" id="logo" role="button" tabindex="0" aria-label="Toggle menu"><i>&lt;/&gt;</i>FrontQuiz</div>
- <button class="nav on" data-go="home"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg><span>Home</span></button>
- <button class="nav" data-go="topics"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span>Topics</span></button>
- <button class="nav" data-go="progress"><svg class="ni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V11"/><path d="M10 20V4"/><path d="M16 20v-6"/><path d="M22 20H2"/></svg><span>Progress</span></button>
- <p class="quote">Ship small, learn fast, break nothing twice.</p>
-</aside>
-<main>
- <div class="top">
-  <button class="ic burger" id="menuBtn" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-  <div class="tabs" aria-hidden="true"><span class="on">Learn</span><span>Practice</span><span>Ship</span></div>
-  <div class="me"><button class="ic" id="theme" aria-label="Toggle dark mode"></button></div>
- </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
 
- <section id="home">
-  <div class="hero">
-   <div>
-    <h1>Front<em>End</em> Quiz</h1>
-    <p class="sub">Test what you build every day</p>
-    <p class="mut">Pick a topic, answer, see what stuck. Repeat until it ships.</p>
-    <div class="btns"><button class="btn p" data-go="topics">Explore topics →</button><button class="btn" data-go="progress">See your progress</button></div>
-    <div class="stats">
-     <div class="stat s1"><b id="nT">0</b>Topics</div>
-     <div class="stat s2"><b id="nQ">0</b>Questions</div>
-     <div class="stat s3"><b id="nD">0</b>Completed</div>
+    <title>FrontQuiz — Front-End Practice Quiz</title>
+
+    <meta
+      name="description"
+      content="Practice HTML, CSS, JavaScript, TypeScript and front-end development with interactive quizzes and progress tracking."
+    />
+
+    <meta name="theme-color" content="#f6f7fd" />
+
+ <link rel="preload" href="./questions.json" as="fetch" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="overlay" id="overlay"></div>
+      <aside>
+        <div
+          class="logo"
+          id="logo"
+          role="button"
+          tabindex="0"
+          aria-label="Toggle menu"
+        >
+          <i>&lt;/&gt;</i>FrontQuiz
+        </div>
+        <button class="nav on" data-go="home">
+          <svg
+            class="ni"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 11l9-8 9 8" />
+            <path d="M5 10v10h5v-6h4v6h5V10" /></svg
+          ><span>Home</span>
+        </button>
+        <button class="nav" data-go="topics">
+          <svg
+            class="ni"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="3" y="3" width="7" height="7" rx="2" />
+            <rect x="14" y="3" width="7" height="7" rx="2" />
+            <rect x="3" y="14" width="7" height="7" rx="2" />
+            <rect x="14" y="14" width="7" height="7" rx="2" /></svg
+          ><span>Topics</span>
+        </button>
+        <button class="nav" data-go="progress">
+          <svg
+            class="ni"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 20V11" />
+            <path d="M10 20V4" />
+            <path d="M16 20v-6" />
+            <path d="M22 20H2" /></svg
+          ><span>Progress</span>
+        </button>
+        <p class="quote">Ship small, learn fast, break nothing twice.</p>
+      </aside>
+      <main>
+        <div class="top">
+          <button class="ic burger" id="menuBtn" aria-label="Open menu">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <div class="tabs" aria-hidden="true">
+            <span class="on">Learn</span><span>Practice</span><span>Ship</span>
+          </div>
+          <div class="me">
+            <button
+              class="ic"
+              id="theme"
+              aria-label="Toggle dark mode"
+            ></button>
+          </div>
+        </div>
+
+        <section id="home">
+          <div class="hero">
+            <div>
+              <h1>Front<em>End</em> Quiz</h1>
+              <p class="sub">Test what you build every day</p>
+              <p class="mut">
+                Pick a topic, answer, see what stuck. Repeat until it ships.
+              </p>
+              <div class="btns">
+                <button class="btn p" data-go="topics">Explore topics →</button
+                ><button class="btn" data-go="progress">
+                  See your progress
+                </button>
+              </div>
+              <div class="stats">
+                <div class="stat s1"><b id="nT">0</b>Topics</div>
+                <div class="stat s2"><b id="nQ">0</b>Questions</div>
+                <div class="stat s3"><b id="nD">0</b>Completed</div>
+              </div>
+            </div>
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 520 380">
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#5b7cfa" />
+                    <stop offset="1" stop-color="#f2788f" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M70 330V170a110 110 0 0 1 220 0v160z"
+                  fill="url(#g)"
+                  opacity=".22"
+                />
+                <g class="float">
+                  <g transform="rotate(6 280 180)">
+                    <rect
+                      x="110"
+                      y="70"
+                      width="340"
+                      height="220"
+                      rx="16"
+                      fill="#1e2547"
+                    />
+                    <rect
+                      x="110"
+                      y="70"
+                      width="340"
+                      height="30"
+                      rx="16"
+                      fill="#2f3a74"
+                    />
+                    <circle cx="130" cy="85" r="5" fill="#f2788f" />
+                    <circle cx="148" cy="85" r="5" fill="#ffc83d" />
+                    <circle cx="166" cy="85" r="5" fill="#9db0ff" />
+                    <text
+                      x="130"
+                      y="135"
+                      fill="#9db0ff"
+                      font-family="monospace"
+                      font-size="15"
+                    >
+                      &lt;h1&gt;
+                    </text>
+                    <text
+                      x="150"
+                      y="160"
+                      fill="#fff"
+                      font-family="monospace"
+                      font-size="17"
+                    >
+                      Good developers
+                    </text>
+                    <text
+                      x="150"
+                      y="185"
+                      fill="#fff"
+                      font-family="monospace"
+                      font-size="17"
+                    >
+                      never stop learning
+                    </text>
+                    <text
+                      x="130"
+                      y="210"
+                      fill="#9db0ff"
+                      font-family="monospace"
+                      font-size="15"
+                    >
+                      &lt;/h1&gt;
+                    </text>
+                    <text
+                      x="130"
+                      y="248"
+                      fill="#ff9fb8"
+                      font-family="monospace"
+                      font-size="15"
+                    >
+                      .dev { skill: grow; }
+                    </text>
+                  </g>
+                </g>
+                <g
+                  class="float3"
+                  font-family="monospace"
+                  font-weight="700"
+                  font-size="16"
+                >
+                  <rect
+                    x="20"
+                    y="250"
+                    width="150"
+                    height="34"
+                    rx="6"
+                    fill="#ff9fb8"
+                  />
+                  <text x="36" y="272" fill="#fff">HTML</text>
+                  <rect
+                    x="30"
+                    y="288"
+                    width="150"
+                    height="34"
+                    rx="6"
+                    fill="#7aa2f7"
+                  />
+                  <text x="46" y="310" fill="#fff">CSS</text>
+                  <rect
+                    x="14"
+                    y="326"
+                    width="150"
+                    height="34"
+                    rx="6"
+                    fill="#ffd37a"
+                  />
+                  <text x="30" y="348" fill="#3a2e00">JavaScript</text>
+                </g>
+                <g class="float2">
+                  <rect
+                    x="410"
+                    y="20"
+                    width="76"
+                    height="40"
+                    rx="12"
+                    fill="#5b7cfa"
+                  />
+                  <text
+                    x="424"
+                    y="46"
+                    fill="#fff"
+                    font-family="monospace"
+                    font-size="16"
+                  >
+                    { }
+                  </text>
+                </g>
+                <g class="float3">
+                  <rect
+                    x="440"
+                    y="300"
+                    width="60"
+                    height="40"
+                    rx="12"
+                    fill="#f2788f"
+                  />
+                  <text
+                    x="454"
+                    y="326"
+                    fill="#fff"
+                    font-family="monospace"
+                    font-size="16"
+                  >
+                    TS
+                  </text>
+                </g>
+                <ellipse cx="470" cy="236" rx="30" ry="12" fill="#d5daf0" />
+                <ellipse cx="470" cy="228" rx="22" ry="9" fill="#5b3a29" />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section id="topics">
+          <h2>Choose a topic</h2>
+          <p class="mut">Pick one and start your quiz.</p>
+          <div class="grid" id="grid"></div>
+        </section>
+
+        <section id="progress" class="hide">
+          <h2>Your progress</h2>
+          <p class="mut">Best score per topic, saved in this browser.</p>
+          <div class="grid" id="pgrid"></div>
+        </section>
+
+        <section id="quiz" class="hide" aria-live="polite">
+          <div class="q-head">
+            <div>
+              <h1 id="qt" style="font-size: 44px"></h1>
+              <p class="mut">Test your front-end knowledge</p>
+            </div>
+            <div class="pill" id="qn"></div>
+          </div>
+          <div class="bar" style="margin-top: 6px">
+            <i id="qb" style="width: 0"></i>
+          </div>
+          <div class="panel">
+            <span class="tag" id="qtag"></span>
+            <h3 id="qq"></h3>
+            <div class="opts" id="qo"></div>
+          </div>
+          <button class="btn p" id="next" disabled>Next →</button>
+        </section>
+
+        <section id="result" class="hide">
+          <div class="panel res">
+            <div class="big" id="rs"></div>
+            <h2 id="rm" style="margin: 8px 0"></h2>
+            <p class="mut" id="rd"></p>
+            <div class="btns" style="justify-content: center">
+              <button class="btn p" id="again">Try again</button
+              ><button class="btn" id="allTopics">All topics</button>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <span>FrontQuiz — build your skills, build your future.</span
+          ><span>Made with HTML, CSS and TypeScript</span>
+        </footer>
+      </main>
     </div>
-   </div>
-   <div class="art" aria-hidden="true">
-    <svg viewBox="0 0 520 380"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b7cfa"/><stop offset="1" stop-color="#f2788f"/></linearGradient></defs>
-     <path d="M70 330V170a110 110 0 0 1 220 0v160z" fill="url(#g)" opacity=".22"/>
-     <g class="float"><g transform="rotate(6 280 180)"><rect x="110" y="70" width="340" height="220" rx="16" fill="#1e2547"/><rect x="110" y="70" width="340" height="30" rx="16" fill="#2f3a74"/><circle cx="130" cy="85" r="5" fill="#f2788f"/><circle cx="148" cy="85" r="5" fill="#ffc83d"/><circle cx="166" cy="85" r="5" fill="#9db0ff"/>
-     <text x="130" y="135" fill="#9db0ff" font-family="monospace" font-size="15">&lt;h1&gt;</text><text x="150" y="160" fill="#fff" font-family="monospace" font-size="17">Good developers</text><text x="150" y="185" fill="#fff" font-family="monospace" font-size="17">never stop learning</text><text x="130" y="210" fill="#9db0ff" font-family="monospace" font-size="15">&lt;/h1&gt;</text><text x="130" y="248" fill="#ff9fb8" font-family="monospace" font-size="15">.dev { skill: grow; }</text></g></g>
-     <g class="float3" font-family="monospace" font-weight="700" font-size="16"><rect x="20" y="250" width="150" height="34" rx="6" fill="#ff9fb8"/><text x="36" y="272" fill="#fff">HTML</text><rect x="30" y="288" width="150" height="34" rx="6" fill="#7aa2f7"/><text x="46" y="310" fill="#fff">CSS</text><rect x="14" y="326" width="150" height="34" rx="6" fill="#ffd37a"/><text x="30" y="348" fill="#3a2e00">JavaScript</text></g>
-     <g class="float2"><rect x="410" y="20" width="76" height="40" rx="12" fill="#5b7cfa"/><text x="424" y="46" fill="#fff" font-family="monospace" font-size="16">{ }</text></g>
-     <g class="float3"><rect x="440" y="300" width="60" height="40" rx="12" fill="#f2788f"/><text x="454" y="326" fill="#fff" font-family="monospace" font-size="16">TS</text></g>
-     <ellipse cx="470" cy="236" rx="30" ry="12" fill="#d5daf0"/><ellipse cx="470" cy="228" rx="22" ry="9" fill="#5b3a29"/></svg>
-   </div>
-  </div>
- </section>
 
- <section id="topics">
-  <h2>Choose a topic</h2><p class="mut">Pick one and start your quiz.</p>
-  <div class="grid" id="grid"></div>
- </section>
-
- <section id="progress" class="hide">
-  <h2>Your progress</h2><p class="mut">Best score per topic, saved in this browser.</p>
-  <div class="grid" id="pgrid"></div>
- </section>
-
- <section id="quiz" class="hide" aria-live="polite">
-  <div class="q-head"><div><h1 id="qt" style="font-size:44px"></h1><p class="mut">Test your front-end knowledge</p></div><div class="pill" id="qn"></div></div>
-  <div class="bar" style="margin-top:6px"><i id="qb" style="width:0"></i></div>
-  <div class="panel"><span class="tag" id="qtag"></span><h3 id="qq"></h3><div class="opts" id="qo"></div></div>
-  <button class="btn p" id="next" disabled>Next →</button>
- </section>
-
- <section id="result" class="hide">
-  <div class="panel res"><div class="big" id="rs"></div><h2 id="rm" style="margin:8px 0"></h2><p class="mut" id="rd"></p>
-   <div class="btns" style="justify-content:center"><button class="btn p" id="again">Try again</button><button class="btn" id="allTopics">All topics</button></div></div>
- </section>
-
- <footer><span>FrontQuiz — build your skills, build your future.</span><span>Made with HTML, CSS and TypeScript</span></footer>
-</main>
-</div>
-
-<script type="module" src="dist/main.js"></script>
-</body>
+    <script type="module" src="dist/main.js"></script>
+  </body>
 </html>

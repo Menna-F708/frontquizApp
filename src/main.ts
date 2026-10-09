@@ -25,8 +25,11 @@ type Topics = {
    ============================================================ */
 async function fetchData<T>(url: string): Promise<T> {
   const response = await fetch(url); // بنطلب الملف
+  if (!response.ok)
+    throw new Error(`Failed to load ${url}: ${response.status}`);
   const data = (await response.json()) as T; // بنطلّع الداتا اللي جواه
   return data;
+  
 }
 
 /* ============================================================

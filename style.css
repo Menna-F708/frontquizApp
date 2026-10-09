@@ -50,12 +50,21 @@
 html, body {
   height: 100%;
 }
+
+
 body {
-  font-family: var(--bd);
-  background: radial-gradient(900px 500px at 85% -10%,color-mix(in srgb,var(--pri) 16%,transparent),transparent),radial-gradient(700px 500px at -10% 30%,color-mix(in srgb,var(--acc) 14%,transparent),transparent),var(--bg);
-  background-attachment: fixed;
+    font-family: var(--bd);
   color: var(--ink);
   line-height: 1.5;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(900px 500px at 85% -10%, color-mix(in srgb, var(--pri) 16%, transparent), transparent),
+              radial-gradient(700px 500px at -10% 30%, color-mix(in srgb, var(--acc) 14%, transparent), transparent),
+              var(--bg);
 }
 h1, h2, h3 {
   font-family: var(--hd);
